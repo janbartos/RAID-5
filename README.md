@@ -10,7 +10,7 @@ The core logic is encapsulated in the `CRaidVolume` class, which manages reading
 
 ## Key Features
 
-- Supports any number of devices `n`, where `n >= 3`.
+- Supports any number of devices `n`, where `n >= 3` and `n <= 16`.
 - Tolerates failure of **one device** without data loss (`RAID_DEGRADED` mode).
 - Uniform distribution of parity (rotating parity across devices).
 - Logical capacity is approximately `(n - 1) * device capacity` (plus a small overhead).
